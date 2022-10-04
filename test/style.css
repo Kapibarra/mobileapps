@@ -1,0 +1,39 @@
+.container {
+    background: #001220;
+    height: 100vh;
+}
+
+.phone {
+    position: fixed;
+    top: 20%;
+    right: 50%;
+    z-index: 5;
+}
+
+.r {
+    position: fixed;
+    top: 0%;
+    right: 20%;
+}
+
+.vector {
+    position: fixed;
+    top: 20%;
+    right: 40%;
+    animation: spin 0.4s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        filter: brightness(1.3);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+        filter: brightness(0.6);
+    }
+}
